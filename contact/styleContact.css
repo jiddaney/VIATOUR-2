@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-attachment: fixed;
+    background-image: image-set(url(image/backg.jpg));
+    background-size: cover;
+    height: 100vh;
+    backdrop-filter: blur(2px); /* Adds a blurred background effect */
+    background-color: rgba(255, 255, 255, 0.263);
+    overflow-x: hidden;
+    
+}
+main{
+    background-repeat: no-repeat;
+
+}
+.forma{
+    justify-content: center;
+}
+nav{
+    padding: 0px;
+    width: 100%;
+    background-color:rgb(250, 235, 215);
+    display: flex;
+}
+nav a {
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+form{
+    background-color: #faebd7;
+    padding: 30px;
+    width: 500px;
+    height: 300px;
+    margin-left: 400px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-attachment:fixed ;
+
+}
+button {
+    height: 40px;
+    border-radius: 15px;
+    color:aliceblue;
+    border: none;
+    background-color: #eb662b;
+    
+}
+
+.pieds{
+    justify-self: center;
+    align-self: center;
+    margin-top: -50px;
+}
+
+.boite{
+    padding: 10px;
+    flex-direction: column;
+}
+input{
+    border-radius: 5px;
+    width: 200px;
+}
+.droite{
+    margin-left: 280px;
+    margin-bottom: 170px;
+    margin-top: -230px;
+}
+label{
+    font-size: 20px;
+}
+
+.group  .boite{
+   display: flex;
+}
+textarea{
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
+}
+hr{
+    width: 50px;
+    height: 20px;
+}
+@media screen and (max-width: 992px) {
+  
+  }
+  
+@media screen and (max-width: 600px) {
+  
+  }
