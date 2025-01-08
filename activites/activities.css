@@ -1,43 +1,42 @@
 /* Styling the navigation bar */
 .navbar {
-    display: flex; /* Arrange items horizontally */
-    justify-content: space-between; /* Space out items evenly */
-    align-items: center; /* Center items vertically */
-    padding: 10px 20px; /* Add padding to the navbar */
-    background-color: #fbe9e7; /* Set the background color */
-  }
-  
-  /* Styling the logo image */
-  .navbar img {
-    height: 50px; /* Set the height of the logo */
-  }
-  
-  /* Styling the navigation links */
-  .nav-links {
-    list-style: none; /* Remove bullets from the list */
-    display: flex; /* Arrange links in a row */
-    gap: 20px; /* Add space between each link */
-  }
-  
-  /* Styling the anchor tags (links) */
-  .nav-links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set the text color */
-    font-weight: bold; /* Make the text bold */
-  }
-  
-  /* Styling the primary button */
-  .btn-primary {
-    background-color: #ff7043; /* Set the background color */
-    color: white; /* Set the text color */
-    border: none; /* Remove the border */
-    padding: 8px 16px; /* Add padding inside the button */
-    border-radius: 5px; /* Make the button corners rounded */
-    cursor: pointer; /* Change cursor to pointer when hovering */
-  }
-  
-  /* Change button color on hover */
-  .btn-primary:hover {
-    background-color: #e64a19; /* Change background color when hovered */
-  }
-  
+  display: flex; /* Arrange items horizontally */
+  justify-content: space-between; /* Space out items evenly */
+  align-items: center; /* Center items vertically */
+  padding: 10px 20px; /* Add padding to the navbar */
+  background-color: #fbe9e7; /* Set the background color */
+}
+
+/* Styling the logo  gg image */
+.navbar img {
+  height: 50px; /* Set the height of the logo */
+}
+
+/* Styling the navigation links */
+.nav-links {
+  list-style: none; /* Remove bullets from the list */
+  display: flex; /* Arrange links in a row */
+  gap: 20px; /* Add space between each link */
+}
+
+/* Styling the anchor tags (links) */
+.nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set the text color */
+  font-weight: bold; /* Make the text bold */
+}
+
+/* Styling the primary button */
+.btn-primary {
+  background-color: #ff7043; /* Set the background color */
+  color: white; /* Set the text color */
+  border: none; /* Remove the border */
+  padding: 8px 16px; /* Add padding inside the button */
+  border-radius: 5px; /* Make the button corners rounded */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+}
+
+/* Change button color on hover */
+.btn-primary:hover {
+  background-color: #e64a19; /* Change background color when hovered */
+}
