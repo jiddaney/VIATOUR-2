@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.pexels.com/photos/386009/pexels-photo-386009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    
+}
+/* Side Menu Container */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #fef4f2;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Side Menu Header */
+.side-menu-header {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Side Menu Links */
+.side-menu nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.side-menu nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+    transition: color 0.3s ease;
+}
+
+.side-menu nav a:hover {
+    color: #f16a45;
+}
+
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1100;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+/* Hide Checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Show Side Menu When Checkbox is Checked */
+.menu-checkbox:checked ~ .side-menu {
+    left: 0; /* Slide menu into view */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form Title */
+.form-container h1 {
+    color: #f16a45;
+    margin-bottom: 20px;
+}
+
+/* Form Labels and Inputs */
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button */
+form .btn {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form .btn:hover {
+    background-color: #d95a3a;
+}
+
+/* Link to Sign Up */
+form p {
+    margin-top: 15px;
+    color: #333;
+}
+
+form p a {
+    color: #f16a45;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}
+@media screen and (max-width: 992px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+}
+

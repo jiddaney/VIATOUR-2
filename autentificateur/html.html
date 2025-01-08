@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Toggle Button -->
+    <label for="menu-toggle" class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- Side Menu -->
+    <div class="side-menu">
+        <div class="side-menu-header">
+            <h2>Menu</h2>
+        </div>
+        <nav>
+            <a href="index.html">Viatours</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="activities.html">Activités</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Créer un Compte</a>
+            <a href="signin.html">Se Connecter</a>
+        </nav>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container">
+        <h1>Se Connecter</h1>
+        <form action="#" method="POST">
+            <label for="email">Adresse Email</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <label for="password">Mot de Passe</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+            </div>
+
+            <button type="submit" class="btn">Se Connecter</button>
+            <p>Pas de compte ? <a href="signup.html">Créer un Compte</a></p>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>&copy; 2025 Viatours. Tous droits réservés.</p>
+</footer>
+</html>
