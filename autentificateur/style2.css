@@ -8,10 +8,9 @@ body {
     background-attachment: fixed;
     background-position: center;
     color: #333;
-    
 }
 
-/* Side Menu Container */
+/* Side Menu */
 .side-menu {
     position: fixed;
     top: 0;
@@ -84,143 +83,100 @@ body {
 .menu-checkbox:checked ~ .side-menu {
     left: 0; /* Slide menu into view */
 }
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-/* Add this to your existing CSS file */
-@keyframes buttonHover {
-0% {
-transform: scale(1);
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-50% {
-transform: scale(1.1);
-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
-}
-100% {
-transform: scale(1);
-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-}
 
-
-
-nav a.btn {
-background-color: #f16a45;
-color: #fff;
-padding: 10px 20px;
-border-radius: 20px;
-height: 20%;
-transition: transform 0.3s, box-shadow 0.3s;
-}
-
-/* Add hover animation */
-nav a.btn:hover {
-animation: buttonHover 0.6s ease-in-out;
-}
-
-
-header {
-    background-color: #fef4f2b4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-}
-
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #f16a45;
-}
-
-
-nav {
-    display: flex;
-    gap: 20px;
-    
-}
-
-/* Change color of navigation links when hovered */
-nav a {
-text-decoration: none;
-color: #000000;
-font-weight: bold;
-display: flex;
-align-items: center;
-transition: color 0.3s, transform 0.3s; /* smooth transition */
-}
-
-
-
-nav a:hover {
-
-transform: scale(1.1); 
-}
-
-
-/* Form Container */
-.form-container {
-    max-width: 400px;
-    margin: 100px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+/* Sign-Up Form */
+.sign-up-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-top: 10%;
 }
 
-/* Form Title */
-.form-container h1 {
+.sign-up-container h1 {
+    font-size: 24px;
     color: #f16a45;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-/* Form Labels and Inputs */
-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
+.sign-up-container h1 span {
     color: #333;
 }
 
-form input {
-    width: 95%;
-    padding: 10px;
+.sign-up-container p {
+    color: #666;
+    font-size: 14px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
-/* Button */
-form .btn {
-    background-color: #f16a45;
-    color: #fff;
-    padding: 10px 20px;
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.form-wrapper h1 {
+    text-align: center;   
+}
+.form-wrapper p {
+    text-align: center;   
+}
+
+
+
+.form-wrapper label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-wrapper input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-wrapper input:focus {
+    border-color: #f16a45;
+    outline: none;
+}
+
+.btn {
+    background: #f16a45;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 200px;
+}
+
+.btn:hover {
+    background: #d14c36;
+}
+
+.signin-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.signin-link a {
+    color: #f16a45;
+    text-decoration: none;
     font-weight: bold;
 }
 
-form .btn:hover {
-    background-color: #d95a3a;
-}
-
-/* Link to Sign Up */
-form p {
-    margin-top: 15px;
-    color: #333;
-}
-
-form p a {
-    color: #f16a45;
-    text-decoration: none;
-}
-
-form p a:hover {
+.signin-link a:hover {
     text-decoration: underline;
 }
 @media screen and (max-width: 992px) {
@@ -230,4 +186,3 @@ form p a:hover {
 @media screen and (max-width: 600px) {
   
 }
-
