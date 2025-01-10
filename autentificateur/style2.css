@@ -1,8 +1,9 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url('https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('mesut-kaya-eOcyhe5-9sQ-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,14 +11,78 @@ body {
     color: #333;
 }
 
-/* Side Menu */
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(241, 106, 69, 0.8);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.nav-bar .logo {
+    font-size: 20px;
+            font-weight: bold;
+            color: #f16a45;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    background-color: #0303038e;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-bar a {
+    color: #ddd;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+nav a.bttn {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 10px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Sidebar */
 .side-menu {
     position: fixed;
     top: 0;
-    left: -300px; /* Initially hidden */
+    left: -300px;
     width: 300px;
     height: 100%;
-    background-color: #fef4f2;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     transition: left 0.3s ease-in-out;
@@ -25,7 +90,6 @@ body {
     flex-direction: column;
 }
 
-/* Side Menu Header */
 .side-menu-header {
     background-color: #f16a45;
     color: #fff;
@@ -35,7 +99,6 @@ body {
     font-weight: bold;
 }
 
-/* Side Menu Links */
 .side-menu nav {
     display: flex;
     flex-direction: column;
@@ -47,7 +110,7 @@ body {
     color: #333;
     font-weight: bold;
     padding: 15px 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dddddd;
     transition: color 0.3s ease;
 }
 
@@ -55,7 +118,7 @@ body {
     color: #f16a45;
 }
 
-
+/* Menu Toggle Button */
 .menu-toggle {
     cursor: pointer;
     position: fixed;
@@ -74,70 +137,58 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Hide Checkbox */
 .menu-checkbox {
     display: none;
 }
 
-/* Show Side Menu When Checkbox is Checked */
 .menu-checkbox:checked ~ .side-menu {
-    left: 0; /* Slide menu into view */
+    left: 0;
 }
 
-/* Sign-Up Form */
+/* Form Container */
 .sign-up-container {
+    margin: 80px auto 20px;
     width: 100%;
-    max-width: 500px;
-    margin: auto;
-    background: #fff;
+    max-width: 450px;
+    background: rgb(255, 255, 255);
     padding: 30px 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    margin-top: 10%;
+    box-shadow: -1px 1px 20px 14px rgb(0 0 0 / 59%);
+    
 }
 
 .sign-up-container h1 {
     font-size: 24px;
     color: #f16a45;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .sign-up-container h1 span {
     color: #333;
+    text-align: center;
 }
 
 .sign-up-container p {
     color: #666;
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: center;
 }
-
-.form-wrapper {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-.form-wrapper h1 {
-    text-align: center;   
-}
-.form-wrapper p {
-    text-align: center;   
-}
-
-
 
 .form-wrapper label {
     text-align: left;
     font-size: 14px;
     margin-bottom: 5px;
+    
+
 }
 
 .form-wrapper input {
-    width: 95%;
+    width: 96%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #151313;
     border-radius: 5px;
     font-size: 16px;
     transition: border-color 0.3s;
@@ -158,7 +209,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-    margin-left: 200px;
+    margin-left: 170px;
+    
 }
 
 .btn:hover {
@@ -179,10 +231,41 @@ body {
 .signin-link a:hover {
     text-decoration: underline;
 }
-@media screen and (max-width: 992px) {
-  
+
+/* Footer */
+footer {
+    background-color: #00000069;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-@media screen and (max-width: 600px) {
-  
+/* Media Queries */
+@media screen and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+
+    .side-menu {
+        left: -300px;
+    }
+
+    .menu-checkbox:checked ~ .side-menu {
+        left: 0;
+    }
+    
+}
+
+@media screen and (min-width: 700px) {
+    .side-menu {
+        left: -300px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+    }
 }
