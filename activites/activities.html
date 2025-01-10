@@ -1,25 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
-
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities Page</title>
-    <link rel="stylesheet" href="activities.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activités</title>
+  <link rel="stylesheet" href="activities.css">
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-        <img src="image/Logo.svg-removebg-preview.png" >
-      <ul class="nav-links">
-        <li><a href="#destination">Destination</a></li>
-        <li><a href="#activities">Activités</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#account">Créer un compte</a></li>
-      </ul>
-      <button class="btn-primary">Se connecter</button>
-    </nav>
- 
+  <!-- Sidebar Toggle Button -->
+  <label for="menu-toggle" class="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+  </label>
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+  <!-- Top Navigation Bar -->
+  <div class="nav-bar">
+    
+          <a href="activite.html">Activité</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html">Créer un compte</a>
+          <a href="signin.html" class="btn">Se Connecter</a>
+      </nav>
+  </div>
+
+  <!-- Side Menu -->
+  <div class="side-menu">
+      <div class="side-menu-header">
+          <h2>Menu</h2>
+      </div>
+      <nav>
+          <a href="index.html">Viatours</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="activities.html">Activités</a>
+          <a href="contact.html">Contact</a>
+          <a href="signup.html">Créer un Compte</a>
+          <a href="signin.html">Se Connecter</a>
+      </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Des Expériences Uniques<br>Vous Attendent</h1>
+      <p>"Des moments inoubliables à vivre, entre aventure, détente et découverte culturelle."</p>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="activities">
+    <div class="container">
+      <h1>Nos Activités</h1>
+      <p>Découvrez nos activités pour des aventures inoubliables.</p>
+      <div class="activities-grid">
+        <div class="activity-card">
+          <img src="image/tour.jpeg" alt="Tour Eiffel">
+          <h3>Seine River Cruise</h3>
+          <p>Enjoy a scenic cruise along the Seine River, passing by famous landmarks like Notre-Dame Cathedral and the Louvre.</p>
+          <button class="btn-secondary">Réserver</button>
+        </div>
+        <div class="activity-card">
+          <img src="image/mayotte5.jpg" alt="Snorkeling in Bali">
+          <h3>Snorkeling in Bali</h3>
+          <p>Discover the vibrant marine life and crystal-clear waters around Nusa Penida, perfect for snorkeling and diving.</p>
+          <button class="btn-secondary">Réserver</button>
+        </div>
+        <div class="activity-card">
+          <img src="image/OIP (1).jpeg" alt="Hammam">
+          <h3>Hammam</h3>
+          <p>Profitez d'un bain de vapeur marocain traditionnel pour une peau douce et rafraîchie.</p>
+          <button class="btn-secondary">Réserver</button>
+        </div>
+        <div class="activity-card">
+          <img src="image/excursion-marrakech-quad.jpg" alt="Quad in Marrakesh">
+          <h3>Quad in Marrakesh</h3>
+          <p>Experience an exhilarating quad biking adventure through the stunning landscapes of Marrakesh.</p>
+          <button class="btn-secondary">Réserver</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Viatours. Tous droits réservés.</p>
+  </footer>
+</body>
 </html>
