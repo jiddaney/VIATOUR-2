@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un Compte - Viatours</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<div class="nav-bar">
+    <a href="main.html"><div class="logo"><img src="Logo.svg-removebg-preview.png" alt="Icon"></div></a>
+    <nav class="navbar">
+        <a href="destinations.html">Destinations</a>
+        <a href="activite.html">Activite</a>
+        <a href="contact.html">Contact</a>
+        <a href="signup.html">Crée un compte</a>
+        <a href="signin.html" class="bttn">Se Connecter</a>
+    </nav>
+    </div>
+    <body>
+        <!-- Toggle Button -->
+        <label for="menu-toggle" class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    
+        <!-- Side Menu -->
+        <div class="side-menu">
+            <div class="side-menu-header">
+                <h2>Menu</h2>
+            </div>
+            <nav>
+                <a href="main.html">Viatours</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="activities.html">Activités</a>
+                <a href="contact.html">Contact</a>
+                <a href="signup.html">Créer un Compte</a>
+                <a href="signin.html">Se Connecter</a>
+            </nav>
+        </div>
+
+
+    <!-- Main Content -->
+    <main class="sign-up-container">
+        <div class="form-wrapper">
+            <h1>Rejoignez <span>Viatours</span></h1>
+            <p>Créez votre compte pour commencer à explorer le monde.</p>
+            <form action="#" method="post">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+
+                <label for="confirm-password">Confirmer le mot de passe</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+            <p class="signin-link">
+                Vous avez déjà un compte ? <a href="signin.html">Connectez-vous</a>.
+            </p>
+        </div>
+    </main>
+</body>
+<footer>
+    <p>&copy; 2025 Viatours. Tous droits réservés.</p>
+</footer>
+</html>

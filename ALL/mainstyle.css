@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('mesut-kaya-eOcyhe5-9sQ-unsplash.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+        }
+  
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        /* Add this to your existing CSS file */
+  @keyframes buttonHover {
+  0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+    
+  
+  
+  nav a.btn {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    height: 20%;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Add hover animation */
+  nav a.btn:hover {
+    animation: buttonHover 0.6s ease-in-out;
+  }
+  
+  
+        header {
+            background-color: #fef4f2b4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        
+  
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f16a45;
+        }
+  
+  
+        nav {
+            display: flex;
+            gap: 20px;
+            
+        }
+  
+       /* Change color of navigation links when hovered */
+  nav a {
+    text-decoration: none;  
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s; /* smooth transition */
+  }
+  
+  
+  
+  nav a:hover {
+
+    transform: scale(1.1); 
+  }
+  
+  
+        .hero {
+            text-align: center;
+            background-color: #ffffff50;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            
+        }
+        .hero .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 20px;
+        }
+  
+        .hero img,
+        .hero hero-img {
+            width: 50%;
+        }
+  
+        .hero img {
+            max-width: 100%;
+            height:auto;
+            margin-right: 50px;
+           
+        }
+  
+        .hero h1 {
+            font-size: 36px;
+            line-height: 1.4;
+        }
+  
+        .hero h1 span {
+            color: #f16a45;
+        }
+  
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        /* Add style for feature toggle */
+  .feature-item {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .feature-toggle {
+    display: none; /* Hide the checkbox */
+  }
+  
+  /* Style for feature content */
+  .feature-item label {
+    cursor: pointer;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item label:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .feature-more-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Show info when checkbox is checked */
+  .feature-toggle:checked ~ .feature-more-info {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Animation for appearing content */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+        /* Button hover animation */
+  @keyframes buttonHover {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  /* General button styling */
+  .btn {
+    background-color: #f16a45;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Add hover animation */
+  .btn:hover {
+    animation: buttonHover 0.6s ease-in-out;
+  }
+  
+        .features {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        /* Feature item styling */
+  .features .feature-item {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover animation for feature items */
+  .features .feature-item:hover {
+    transform: scale(1.1) rotate(1deg); /* Slight zoom and rotation */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  }
+  
+  
+        .features h2 {
+            margin-bottom: 30px;
+        }
+  
+        .features .feature-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+  
+        .features .feature-item {
+            background-color: #ffffff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            
+        }
+  
+        .features .feature-item img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+  
+        footer {
+            background-color: #fef4f2;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            
+        }
+  
+        footer p {
+            margin: 5px 0;
+        }
+        
+  
+  
+  
+  
+  
+        

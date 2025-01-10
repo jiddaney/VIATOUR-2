@@ -1,0 +1,346 @@
+/* activites.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000ab;
+  }
+  nav a.btn {
+      background-color: #f16a45;
+      color: #fff;
+      padding: 10px 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  nav a.btn:hover {
+      animation: buttonHover 0.6s ease-in-out;
+  }
+  
+  header {
+      background-color: #fef4f2b4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+  }
+  
+  header .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #f16a45;
+  }
+  
+  .nav-bar {
+      display: flex;
+      gap: 20px;
+      height: 60px;
+      background-color: #0303038e;
+      justify-content: flex-end;
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .nav-bar a {
+      color: #ddd;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-right: 20px;
+  }
+  
+  nav a {
+      text-decoration: none;
+      justify-content: center;
+      padding: 10px 20px;
+      color: #000000;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s, transform 0.3s;
+  }
+  
+  nav a:hover {
+      transform: scale(1.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .btn-primary {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Sidebar */
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Side Menu Header */
+  .side-menu-header {
+    background-color: #f16a45;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Side Menu Links */
+  .side-menu nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .side-menu nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-bottom: 1px solid #dddddd;
+    transition: color 0.3s ease;
+  }
+  
+  .side-menu nav a:hover {
+    color: #f16a45;
+  }
+  
+  .menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1100;
+  }
+  
+  .menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hide Checkbox */
+  .menu-checkbox {
+    display: none;
+  }
+  
+  /* Show Side Menu When Checkbox is Checked */
+  .menu-checkbox:checked ~ .side-menu {
+    left: 0; /* Slide menu into view */
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  @keyframes buttonHover {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+  }
+  
+  /* Hide the checkbox */
+  #sidebar-toggle {
+    display: none;
+  }
+  
+  /* Show the sidebar when the checkbox is checked */
+  #sidebar-toggle:checked + .sidebar {
+    display: block;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('image/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg') no-repeat center center/cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+  }
+  
+  .hero p {
+    font-family: cursive;
+  }
+  
+  /* Activities Section */
+  .activities h1 {
+    color: #f16a45;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .activities p {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  
+  .activities {
+    padding: 150px;
+  }
+  
+  .activities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .activity-card {
+    background: #fef5f4;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .activity-card img {
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .activity-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .activity-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .btn-secondary {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #00000010;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .activities-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .activities-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .activities-grid {
+      grid-template-columns: 1fr;
+    }
+  
+  }
+  @media screen and (max-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+  
+    .side-menu {
+        left: -300px;
+    }
+  
+    .menu-checkbox:checked ~ .side-menu {
+        left: 0;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .side-menu {
+        left: -300px;
+    }
+  
+    .menu-toggle {
+        display: none;
+    }
+  
+    .nav-bar {
+        display: flex;
+    }
+  }
