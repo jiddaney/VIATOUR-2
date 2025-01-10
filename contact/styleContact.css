@@ -1,95 +1,304 @@
-*{
+/* Resetting padding and margin */
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+/* Body Styles */
+body {
     background-attachment: fixed;
-    background-image: image-set(url(image/backg.jpg));
+    background-image: image-set(url(https://images-ext-1.discordapp.net/external/pV8SdFTxFMZwP74JHkT4uzRE9IFlJEBdQTQeuDGNip8/%3Fixlib%3Drb-4.0.3%26q%3D85%26fm%3Djpg%26crop%3Dentropy%26cs%3Dsrgb%26dl%3Dmesut-kaya-eOcyhe5-9sQ-unsplash.jpg/https/images.unsplash.com/photo-1530789253388-582c481c54b0?format=webp&width=981&height=654));
     background-size: cover;
     height: 100vh;
     backdrop-filter: blur(2px); /* Adds a blurred background effect */
-    background-color: rgba(255, 255, 255, 0.263);
+    background-color: rgba(255, 255, 255, 0);
     overflow-x: hidden;
-    
 }
-main{
-    background-repeat: no-repeat;
 
-}
-.forma{
-    justify-content: center;
-}
-nav{
-    padding: 0px;
-    width: 100%;
-    background-color:rgb(250, 235, 215);
+/* Sidebar Styles */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
     display: flex;
-}
-nav a {
-    margin: 20px;
-    text-decoration: none;
-    color: black;
-}
-form{
-    background-color: #faebd7;
-    padding: 30px;
-    width: 500px;
-    height: 300px;
-    margin-left: 400px;
-    border-radius: 20px;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    background-attachment:fixed ;
-
-}
-button {
-    height: 40px;
-    border-radius: 15px;
-    color:aliceblue;
-    border: none;
-    background-color: #eb662b;
-    
-}
-
-.pieds{
-    justify-self: center;
-    align-self: center;
-    margin-top: -50px;
-}
-
-.boite{
-    padding: 10px;
     flex-direction: column;
 }
-input{
-    border-radius: 5px;
-    width: 200px;
-}
-.droite{
-    margin-left: 280px;
-    margin-bottom: 170px;
-    margin-top: -230px;
-}
-label{
+
+/* Side Menu Header */
+.side-menu-header {
+    background-color: #f16a45;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
     font-size: 20px;
+    font-weight: bold;
 }
 
-.group  .boite{
-   display: flex;
+/* Side Menu Links */
+.side-menu nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
-textarea{
-    margin-top: 20px;
-    width: 200px;
-    height: 100px;
+
+.side-menu nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 15px 10px;
+    border-bottom: 1px solid #dddddd;
+    transition: color 0.3s ease;
 }
-hr{
-    width: 50px;
-    height: 20px;
+
+.side-menu nav a:hover {
+    color: #f16a45;
 }
+
+.menu-toggle {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1100;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+/* Hide Checkbox */
+.menu-checkbox {
+    display: none;
+}
+
+/* Show Side Menu When Checkbox is Checked */
+.menu-checkbox:checked ~ .side-menu {
+    left: 0; /* Slide menu into view */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+.nav-bar .logo {
+    font-size: 20px;
+            font-weight: bold;
+            color: #f16a45;
+            justify-content: space-between;
+            
+}
+
+nav a.btn {
+    background-color: #f16a45;
+    color: #ffffffeb;
+    padding: 10px 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+nav a.btn:hover {
+    animation: buttonHover 0.6s ease-in-out;
+}
+
+header {
+    background-color: #fef4f2b4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f16a45;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    height: 60px;
+    background-color: #0303038e;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar a {
+    color: #ddd;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+/* Form and Contact Section */
+form {
+    background-color: #ffffffcc;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: -1px 1px 20px 14px rgb(0 0 0 / 59%);
+    
+}
+
+input, textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #eb662b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e4571f;
+}
+
+.contact .container {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contactInfo {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.contactInfo .box {
+    background-color: #ffffffc9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo .text h3 {
+    font-size: 18px;
+    color: #f16a45;
+}
+
+.contactInfo .text p {
+    font-size: 14px;
+    color: #333;
+}
+
+.contactInfo .box i {
+    color: #f16a45;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00000069;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.pieds button {
+    height: 60px;
+    color: aliceblue;
+    border: none;
+    background-color: #eb662b;
+    border-radius: 12px;
+    width: 120px;
+    margin-left: 240px;
+
+}
+
+/* Responsive Design for Small Screens */
 @media screen and (max-width: 992px) {
-  
-  }
-  
-@media screen and (max-width: 600px) {
-  
-  }
+    .nav-bar {
+        display: none;
+    }
+
+    .side-menu {
+        left: -300px;
+    }
+
+    .menu-checkbox:checked ~ .side-menu {
+        left: 0;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .side-menu {
+        left: -300px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+    }
+}

@@ -8,57 +8,101 @@
     <title>Contacter nous</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 </head>
-<body >
-<header>
-<!--Nav bar -->
-<nav>
-    <div class="list">
-    <img src="/image/Logo.svg-removebg-preview.png" alt="logo">
-    <a href="#"> Discrippppption</a>
-    <a href="#"> Activities</a>
-    <a href="#"> Contacts</a>
-    <a href="#"> Créer un Compte</a>
-   <button> Se Connecter</button>  
+<body>
+    <!-- Sidebar Toggle Button -->
+    <label for="menu-toggle" class="menu-toggle">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <!-- Top Navigation Bar -->
+    <div class="nav-bar">
+        <a href="main.html"><div class="logo"><img src="Logo.svg-removebg-preview.png" alt="Icon"></div></a>
+        <nav class="navbar">
+            <a href="destinations.html">Destinations</a>
+            <a href="activite.html">Activité</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Créer un compte</a>
+            <a href="signin.html" class="btn">Se Connecter</a>
+        </nav>
     </div>
-</nav>
-</header>
+
+    <!-- Side Menu -->
+    <div class="side-menu">
+        <div class="side-menu-header">
+            <h2>Menu</h2>
+        </div>
+        <nav>
+            <a href="index.html">Viatours</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="activities.html">Activités</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Créer un Compte</a>
+            <a href="signin.html">Se Connecter</a>
+        </nav>
+    </div>
 <main>
     <form>
-    <div class="corps-formulaire">
-        <div class="forma">
-        <div class="group">
-            <div class="boite">
-                
-            <label> Nom  <i class="fa-solid fa-user"></i></label><br>
-            
-            <input type="text" placeholder="Votre Nom" required>
+        <section class="contactForm">
+            <div class="corps-formulaire">
+                <div class="forma">
+                    <div class="group">
+                        <div class="boite">
+                            <label>Nom  <i class="fa-solid fa-user"></i></label><br>
+                            <input type="text" placeholder="Votre Nom" required>
+                        </div>
+                        <div class="boite">
+                            <label>Email  <i class="fa-solid fa-envelope"></i></label><br>
+                            <input type="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="boite">
+                            <label>Tel <i class="fa-solid fa-phone"></i></label><br>
+                            <input type="text" placeholder="Votre Tel" required>
+                        </div>
+                        <div class="droite">
+                            <div class="boit">
+                                <label>Message</label><br>
+                                <textarea placeholder="Saissiez ici..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="boite">
-            <label> Email  <i class="fa-solid fa-envelope"></i></label><br>
-            <input type="email" placeholder="Votre Email" required>
-            
+            <div class="pieds">
+                <button type="submit">Envoyer Message</button>
+            </div>
+        </section>
+    </form>
 
+    <!-- Viatours Information Section -->
+    <section class="contact">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="text">
+                    <h3><i class="fa-solid fa-location-dot"></i> Addresse </h3>
+                    <p>N 433 immeuble rue 3 Rue Zouhour , Beni Mellal</p><br>
+                </div>
             </div>
-            <div class="boite">
-            <label> Tel <i class="fa-solid fa-phone"></i></label><br>
-            <input type="text" placeholder="Votre Tel" required>
-            
+            <div class="box">
+                <div class="text">
+                    <h3><i class="fa-solid fa-phone"></i> Téléphone </h3>
+                    <p>0607080911</p><br>
+                </div>
             </div>
-            <div class="droite">
-            <div class="boit">
-            <label> Message  </label><br>
-            <textarea type="text" placeholder="Saissiez ici..."></textarea>
+            <div class="box">
+                <div class="text">
+                    <h3><i class="fa-solid fa-envelope"></i> Email </h3>
+                    <p>contact@viatours.com</p><br>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-    <div class="pieds">
-        <button>Envoyer Message</button>
+    </section>
 
-    </div>
-    </div> 
-</form>
 </main>
+<footer>
+    <p>&copy; 2025 Viatours. Tous droits réservés.</p>
+</footer>
 </body>
-
 </html>
